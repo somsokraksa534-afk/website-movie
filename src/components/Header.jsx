@@ -319,18 +319,23 @@ const Header = () => {
                     {searchResult.map((movie) => {
                       return (
                         <li className="hover:bg-neutral-700">
-                          <button className="flex items-center p-3 w-full text-left">
+                          <button
+                            onClick={() => handleMovieSelect(movie.id)}
+                            className="flex items-center p-3 w-full text-left"
+                          >
                             <div className="w-10 h-14 bg-neutral-700 rounded-full overflow-hidden shrink-0">
                               {/* Conditional Rendering */}
-                              <img
-                                src={getImageURL(movie.poster_path, "w-92")}
-                                alt=""
-                                className="w-full h-full object-cover"
-                              />
-                              {/* Else */}
-                              <div className="w-full h-full flex items-center justify-center text-neutral-500 text-xs">
-                                គ្មានរូបភាព
-                              </div>
+                              {movie.poster_path ? (
+                                <img
+                                  src={getImageURL(movie.poster_path, "w92")}
+                                  alt={movie.title}
+                                  className="w-full h-full object-cover"
+                                />
+                              ) : (
+                                <div className="w-full h-full flex items-center justify-center text-neutral-500 text-xs">
+                                  គ្មានរូបភាព
+                                </div>
+                              )}
                             </div>
                             <div className="ml-3 flex-1">
                               <p className="text-sm font-medium text-white truncate">
