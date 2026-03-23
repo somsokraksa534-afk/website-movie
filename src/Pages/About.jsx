@@ -33,14 +33,13 @@ const About = () => {
             </h1>
 
             <p className="mb-8 text-neutral-300 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              Khmer Coding is the open sourse website that student can learn by
-              themself with a lot of lesson student can{" "}
-              <br className="hidden md:block" />
-              growing faster and build the Knowladge more easier.Student don't
-              need to pay money for this course.
+              Raksa Cinema គឺជាគេហទំព័របើកចំហរដែលគ្រប់គ្នាអាចមើលភាពយន្តបាន។
             </p>
 
-            <Link to="/contact" className="cursor-pointer mt-6 px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-full transition">
+            <Link
+              to="/contact"
+              className="cursor-pointer mt-6 px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-full transition"
+            >
               Contact us
             </Link>
           </div>
@@ -116,11 +115,7 @@ const About = () => {
         <section className="student flex justify-center px-4 md:px-10 pb-10">
           <div className="cardstudent bg-neutral-800 rounded-xl overflow-hidden shadow-lg w-full max-w-xs">
             <div className="imgstu h-52">
-              <img
-                src={Own}
-                alt=""
-                className="w-full h-full object-cover"
-              />
+              <img src={Own} alt="" className="w-full h-full object-cover" />
             </div>
 
             <div className="con p-4">
