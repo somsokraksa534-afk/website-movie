@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* =========================
+   Poppins Font
+========================= */
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins-Regular.ttf") format("truetype");
+  
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins-Medium.ttf") format("truetype");
+  
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins-Bold.ttf") format("truetype");
+  
+}
+
+/* =========================
+   Khmer Font
+========================= */
+@font-face {
+  font-family: "KantumruyPro";
+  src: url("/public/fonts/KantumruyPro-Regular.ttf") format("truetype");
+  
+}
+
+@font-face {
+  font-family: "KantumruyPro";
+  src: url("/public/fonts/KantumruyPro-Medium.ttf") format("truetype");
+  
+}
+
+@font-face {
+  font-family: "KantumruyPro";
+  src: url("/public/fonts/KantumruyPro-Bold.ttf") format("truetype");
+}
+
+/* Optional global */
+body {
+  font-family: "Poppins", "KantumruyPro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
