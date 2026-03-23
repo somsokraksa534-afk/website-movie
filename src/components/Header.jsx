@@ -238,12 +238,12 @@ const Header = () => {
             >
               អំពីយើង
             </Link>
-            <a
+            <Link
               to="/contact"
               className="block text-white hover:text-purple-400 transition-all font-medium font-KantumruyPro"
             >
               ទំនាក់ទំនង
-            </a>
+            </Link>
             <div
               className="relative mt-3 search-container"
               ref={searchContainerRef}
